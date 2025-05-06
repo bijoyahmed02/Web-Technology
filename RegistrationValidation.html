@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="C:\Users\Asus\Downloads\anlogo.jpg" type="image/x-icon"> 
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 115vh;
+            margin: 0;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            
+            }
+            .flex-container h1 {
+            text-align: center;
+            }
+            .flex-container form {
+           padding-left: 15px ;
+            }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+             border-radius: 50%;
+        }
+    table, th, td { 
+    border: 1px solid black; 
+    border-collapse: separate; 
+    border-collapse: collapse; 
+    width: 200px; 
+ } 
+   table.center { 
+    margin-top: 40px;  
+    margin-bottom: auto; 
+    margin-left: auto;  
+    margin-right: auto;
+ } 
+ td { 
+     height: 20px; 
+     vertical-align: top; 
+     vertical-align: bottom; 
+     vertical-align: middle; 
+     text-align: center;  
+ } 
+        
+        
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Asus\Desktop\Webtechnology\Asset\4894.webp" alt="Avatar" style="width:100px">
+    <h1>Form</h1>
+    <div class="flex-container">
+        <div style="background-color: rgb(226, 43, 211); height: 600px; width: 400px;">
+            <h1>Registration Form</h1>
+            <form action="/action_page.php" autocomplete="on">
+                <b><label for="FullName">Full Name:</label></b><br>
+                <input type="text" name="Full Name" placeholder="FULL NAME" id="FullName"><br>
+
+                <b><label for="email">Email:</label></b><br>
+                <input type="email" name="Email" placeholder="User Email" id="Email"><br>
+
+                <b><label for="password">Password:</label></b><br>
+                <input type="password" name="password" placeholder="Password" id="pass"><br>
+
+                <b><label for="Confirm password">Confirm Password:</label></b><br>
+                <input type="password" name="confirm password" placeholder="Confirm Password" id="cp"><br>
+
+                <b><label for="birthday">Date of Birth:</label></b><br>
+                <input type="date" id="birthday" name="birthday"><br>
+
+                <b><label for="Country">Country:</label></b><br>
+                <select id="Country" name="Country" >
+                    <option value="default"></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+                <b><label for="gender">Gender:</label></b><br>
+                Male <input type="radio" name="gender" value="Male" id="genderMale">
+                Female <input type="radio" name="gender" value="Female" id="genderFemale"><br>
+
+                <b><label for="favorite color">Select your favorite color:</label></b><br>
+                <select id="color" name="Favorite color" >
+                <option value="default"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="other">Other</option>
+                </select><br>
+
+                <b><label for="Opinion">Your Opinion:</label></b><br>
+                <textarea id="opinion" name="Opinion" rows="4" cols="30" placeholder="If you choose to share your opinion but its Optional"></textarea><br>
+
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to the terms and conditions</label><br>
+
+                <input type="submit" name="Submit" value="Submit" onclick="return validate()">
+            </form>
+        </div>
+        <div class="column">
+            <div style="background-color: rgba(236, 26, 71, 0.604); height: 170px; width: 400px;">
+                <h1>Login</h1>
+                <form>
+                <b><label for="Uname">User Name:</label></b><br>
+                <input type="email" name="Email" placeholder="User Email" id="Email"><br>
+                <b><label for="password">Password:</label></b><br>
+                <input type="password" name="password" placeholder="Password" id="pass">
+                <input type="submit" name="Submit" value="Submit" onclick="">
+                </form>
+            </div>
+            <div style="background-color: rgb(44, 42, 165); height: 430px; width: 400px;">
+                <form>
+                    <table class="center">
+                        <tr>
+                          <th>City</th>
+                          <th>AQI</th>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <script>
+    function validate() {
+    let fullName = document.getElementById('FullName').value;
+    let email = document.getElementById('Email').value;
+    let password = document.getElementById('pass').value;
+    let confirmPassword = document.getElementById('cp').value;
+    let birthDate = new Date(document.getElementById('birthday').value);
+    let currentDate = new Date();
+
+    let age = currentDate.getFullYear() - birthDate.getFullYear();
+    let m = currentDate.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    let country = document.getElementById('Country').value;
+    let genderMale = document.getElementById('genderMale');
+    let genderFemale = document.getElementById('genderFemale');
+    let favColor = document.getElementById('color').value;
+    let textopinion = document.getElementById('opinion').value;
+    let terms = document.getElementById('terms').checked;
+    let namePattern = /^[a-zA-Z\s]+$/;
+    if (!fullName.match(namePattern) || fullName.trim() === "") {
+        alert("Full Name is required");
+        return false;
+    }
+
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+    if (password.length < 8) {
+        alert("Please select your password and Password must be at least 8 characters long");
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert(" Confirm Passwords do not match");
+        return false;
+    }
+
+    if (isNaN(birthDate) || age < 18) {
+        alert(" Select date and birth and You must be at least 18 years old");
+        return false;
+    }
+
+    if (country === "default") {
+        alert("Please select your Country.");
+        return false;
+    }
+
+    if (!genderMale.checked && !genderFemale.checked) {
+        alert("Please select your Gender");
+        return false;
+    }
+    if (favColor === "default") {
+        alert("Please select your favorite Color");
+        return false;
+    }
+    
+    if (!terms) {
+        alert("You must agree to the terms and conditions");
+        return false;
+    }
+
+    return true;
+}
+    </script>
+</body>
+</html>
