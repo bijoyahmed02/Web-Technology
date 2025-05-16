@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="C:\Users\Asus\Downloads\anlogo.jpg" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 140vh;
+            margin: 0;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .flex-container h1 {
+            text-align: center;
+            }
+            .flex-container form {
+           padding-left: 30px ;
+            }
+ 
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+             border-radius: 50%;
+        }
+    table.center{
+    margin: 110px 0px;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-collapse: collapse;
+    width: 200px;
+ }
+ td {
+     height: 20px;
+     vertical-align: top;
+     vertical-align: bottom;
+     vertical-align: middle;
+     text-align: center;  
+ }
+    .error-message {
+            color: red;
+            font-size: 12px;
+            margin-bottom: 2px;
+            display: block;
+        } 
+   #overlay {
+  height: 200px;
+  width: 230px;
+  margin-top:110px ;
+  margin-left: 80px;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}   
+</style>
+</head>
+<body>
+    <img src="C:\Users\Asus\Desktop\Webtechnology\Asset\4894.webp" alt="Avatar" style="width:100px">
+    <h1>Form</h1>
+    <div class="flex-container">
+        <div style="background-color: hwb(198 17% 11%); height: 770px; width: 400px;">
+            <h1>Registration Form</h1>
+            <form id="registrationForm" action="process.php" method="post">
+
+                <b><label for="FullName" style="align-self: flex-start;">Full Name:</label></b><br>
+                <input type="text" name="fName" placeholder="FULL NAME" id="FullName" style="width: 60%; padding: 3px; margin-bottom: 5px;"><br>
+                <span class="error-message" id="nameError" ></span>
+
+                <b><label for="email" style="align-self: flex-start;">Email:</label></b><br>
+                <input type="email" name="Email" placeholder="User Email" id="Email" style="width: 60%; padding: 3px; margin-bottom: 5px;"><br>
+                <span class="error-message" id="emailError" ></span>
+
+                <b><label for="password">Password:</label></b><br>
+                <input type="password" name="password" placeholder="Password" id="pass" style="width: 60%; padding: 3px; margin-bottom: 5px;"><br>
+                <span class="error-message" id="passwordError"></span>
+ 
+                <b><label for="Confirm password">Confirm Password:</label></b><br>
+                <input type="password" name="confirm password" placeholder="Confirm Password" id="cp" style="width: 60%; padding: 3px; margin-bottom: 5px;"><br>
+                <span class="error-message" id="cpasswordError"></span>
+
+                <b><label for="birthday">Date of Birth:</label></b><br>
+                <input type="date" id="birthday" name="birthday" style="width: 50%; padding: 3px; margin-bottom: 5px;"><br>
+                <span class="error-message" id="dobError"></span>
+
+                <b><label for="Country">Country:</label></b><br>
+                <select id="Country" name="Country" style="width: 50%; padding: 3px; margin-bottom: 5px;" >
+                    <option value="default"></option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <span class="error-message" id="countryError"></span>
+
+ 
+                <b><label for="gender">Gender:</label></b><br>
+                <div style="display: flex; margin-bottom: 4px;">
+                <input type="radio" name="gender" value="Male" id="genderMale">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female" id="genderFemale">
+                <label for="male">Female</label>
+                </div>
+                <span class="error-message" id="genderError"></span>
+        
+                <b><label for="favorite color">Select your favorite color:</label></b><br>
+                <select id="color" name="color" style="width: 35%; padding: 3px; margin-bottom: 5px;">
+                <option value="default"></option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="other">Other</option>
+                </select><br>
+                <span class="error-message" id="colorError"></span>
+ 
+                <b><label for="Opinion">Your Opinion:</label></b><br>
+                <textarea id="opinion" name="Opinion" rows="4" cols="30" placeholder="If you choose to share your opinion but its Optional" style=" margin-bottom: 5px;"></textarea><br>
+ 
+                <div style=" margin-bottom: 7px;">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to the terms and conditions</label><br>
+                </div>
+                <span class="error-message" id="termsError"></span>
+ 
+                <input type="submit" value="Submit" formaction="process.php"><br>
+            </form>
+        </div>
+        <div class="column">
+            <div style="background-color: rgba(236, 26, 71, 0.604); height: 220px; width: 400px;">
+                <h1>Login</h1>
+                <form>
+                <b><label for="Uname">User Name:</label></b><br>
+                <input type="email" name="Email" placeholder="User Email" id="Email" style="width: 60%; padding: 3px; margin-bottom: 5px;"><br>
+                <b><label for="password">Password:</label></b><br>
+                <input type="password" name="password" placeholder="Password" id="pass" style="width: 60%; padding: 3px; margin-bottom: 8px;"><br>
+                <input type="submit" name="Submit" value="Submit" style="padding: 1.5px 12px;" onclick="">
+                </form>
+            </div>
+            <div style="background-color: hsl(182, 59%, 41%); height: 550px; width: 400px;">
+                <form id="overlay">
+                    <table class="center">
+                        <tr><th>City</th><th>AQI</th></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td></tr>  
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('registrationForm');
+    const submitButton = document.querySelector('input[value="Submit"]');
+
+    submitButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent form submission
+        let isValid = true;
+        document.querySelectorAll('.error-message').forEach(span => { // Clear all error messages
+            span.textContent = '';
+        });
+
+        const fullName = document.getElementById('FullName').value.trim();
+        const email = document.getElementById('Email').value.trim();
+        const password = document.getElementById('pass').value;
+        const confirmPassword = document.getElementById('cp').value;
+        const birthDateValue = document.getElementById('birthday').value;
+        const country = document.getElementById('Country').value;
+        const genderMale = document.getElementById('genderMale').checked;
+        const genderFemale = document.getElementById('genderFemale').checked;
+        const favColor = document.getElementById('color').value;
+        const terms = document.getElementById('terms').checked;
+
+        const namePattern = /^[a-zA-Z\s]+$/;
+        if (!namePattern.test(fullName)) {
+            document.getElementById("nameError").textContent = "Write a valid Name";
+            isValid = false;
+        }
+
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            document.getElementById("emailError").textContent = "Please enter a valid email address";
+            isValid = false;
+        }
+
+        if (password.length < 8) {
+            document.getElementById("passwordError").textContent = "Enter a password and password must be at least 8 characters long";
+            isValid = false;
+        }
+
+        if (confirmPassword==="") {
+            document.getElementById("cpasswordError").textContent = "Please confirm your password.";
+            isValid = false;
+        } else if (password !== confirmPassword) {
+            document.getElementById("cpasswordError").textContent = "Password do not match.";
+            isValid = false;
+        }
+        
+        
+
+        const birthDate = new Date(birthDateValue);
+        const currentDate = new Date();
+        let age = currentDate.getFullYear() - birthDate.getFullYear();
+        const m = currentDate.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        if (!birthDateValue || isNaN(birthDate) || age < 18) {
+            document.getElementById("dobError").textContent = "You must be at least 18 years old";
+            isValid = false;
+        }
+
+        if (country === "default") {
+            document.getElementById("countryError").textContent = "Please select your Country";
+            isValid = false;
+        }
+
+        if (!genderMale && !genderFemale) {
+            document.getElementById("genderError").textContent = "Please select your Gender";
+            isValid = false;
+        }
+
+        if (favColor === "default") {
+            document.getElementById("colorError").textContent = "Please select your favorite Color";
+            isValid = false;
+        }
+
+        if (!terms) {
+            document.getElementById("termsError").textContent = "You must agree to the terms and conditions";
+            isValid = false;
+        }
+
+        if (isValid) {
+            alert('Registration Successful!');
+            form.submit();
+        }
+    });
+
+    const addInputListeners = () => {
+        document.getElementById('FullName').addEventListener('input', () => {
+            const namePattern = /^[a-zA-Z\s]+$/;
+            if (namePattern.test(document.getElementById('FullName').value.trim())) {
+                document.getElementById("nameError").textContent = "";
+            }
+        });
+
+        document.getElementById('Email').addEventListener('input', () => {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (emailPattern.test(document.getElementById('Email').value.trim())) {
+                document.getElementById("emailError").textContent = "";
+            }
+        });
+
+        document.getElementById('pass').addEventListener('input', () => {
+            if (document.getElementById('pass').value.length >= 8) {
+                document.getElementById("passwordError").textContent = "";
+            }
+        });
+
+        document.getElementById('cp').addEventListener('input', () => {
+            if (document.getElementById('cp').value !== "") {
+                document.getElementById("cpasswordError").textContent = "Password do not match.";
+            }
+        });
+
+        document.getElementById('cp').addEventListener('input', () => {
+            if (document.getElementById('cp').value === document.getElementById('pass').value) {
+                document.getElementById("cpasswordError").textContent = "";
+            }
+        });
+
+        document.getElementById('birthday').addEventListener('change', () => {
+            const birthDate = new Date(document.getElementById('birthday').value);
+            const currentDate = new Date();
+            let age = currentDate.getFullYear() - birthDate.getFullYear();
+            const m = currentDate.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            if (age >= 18) {
+                document.getElementById("dobError").textContent = "";
+            }
+        });
+
+        document.getElementById('Country').addEventListener('change', () => {
+            if (document.getElementById('Country').value !== "default") {
+                document.getElementById("countryError").textContent = "";
+            }
+        });
+
+        document.getElementById('genderMale').addEventListener('change', () => {
+            document.getElementById("genderError").textContent = "";
+        });
+
+        document.getElementById('genderFemale').addEventListener('change', () => {
+            document.getElementById("genderError").textContent = "";
+        });
+
+        document.getElementById('color').addEventListener('change', () => {
+            if (document.getElementById('color').value !== "default") {
+                document.getElementById("colorError").textContent = "";
+            }
+        });
+
+        document.getElementById('terms').addEventListener('change', () => {
+            if (document.getElementById('terms').checked) {
+                document.getElementById("termsError").textContent = "";
+            }
+        });
+    };
+
+    addInputListeners();
+});
+</script>
+</body>
+</html>
