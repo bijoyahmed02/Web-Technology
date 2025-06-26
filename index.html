@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="C:\Users\Asus\Downloads\anlogo.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            background: url('/Assignment/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .admin-section {
+            position: fixed;
+            top: 5px;
+            left:5px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            z-index: 9999;
+        }
+
+        .admin-btn {
+            padding: 10px 20px;
+            background-color: #cc8800;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            width: 160px;
+        }
+        .admin-options {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .admin-sub-btn {
+            padding: 10px 20px;
+            background-color: #3366cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 160px;
+        }
+
+        .admin-sub-btn:nth-child(2) {
+            background-color: #28a745;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-container h1 {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 45px;
+            color: #880909f8;
+        }
+
+        .flex-container form {
+            padding-left: 30px;
+            line-height: 0.2;
+        }
+
+        .buttons {
+            margin-top: 10px;
+            justify-content: center;
+            margin-left: 80px;
+            line-height: 0.5;
+        }
+
+        .login-btn {
+            background-color: #06119f;
+            color: white;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 45px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .login-btn:hover {
+            background-color: rgb(3, 98, 19);
+        }
+
+        .rtn-btn {
+            background-color: rgb(251, 161, 6);
+            color: white;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .rtn-btn:hover {
+            background-color: rgb(3, 98, 19);
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-section">
+        <button id="adminToggleBtn" class="admin-btn">Administration</button>
+        <div id="adminOptions" class="admin-options">
+            <button onclick="window.location.href='admin.php';" class="admin-sub-btn">Admin Panel</button>
+            <button onclick="window.location.href='Rlogin.php';" class="admin-sub-btn">Manage Users</button>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div style="height: 670px; width: 500px;">
+            <h1>HOTEL GRAND COX'S</h1>
+            <form action="registration.html" method="get">
+                <p style="font-size: 35px; margin-left:130px; color: white;">Experience</p>
+                <p style="font-size: 43px; margin-left:85px; color: white;">The Elegance</p>
+                <div class="buttons">
+                    <button type="submit" class="rtn-btn">Registration now</button>
+                </div>
+            </form>
+            <form action="login.php" method="get">
+                <div class="buttons">
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<div style="background-color: rgb(10, 52, 2); height: 330px; width: 100%; display: flex; flex-direction: row;">
+    <div style="margin-left: 110px; line-height: 0.5; height: 330px; width: 55%;">
+        <p style="margin-left: 220px; font-size:19px; color: rgb(208, 167, 1);"><b>Welcome To</b></p>
+        <p style="margin-left: 170px; font-size: 25px; color: rgb(67, 117, 179);"><b>Hotel Grand Cox's</b></p>
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">The best five star Hotel in the Cox's Bazar region of Bangladesh. Equipped</p> 
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">with all modern state of the art amenities and facilities, located in Cox's</p>
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">Bazar (the sea Beach of Cox's in Bangladesh), around Three hours drive from</p> 
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">Chattogram. This Hotel near Chattogram, is the true combination of ultimate</p>
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">luxury, gracious hospitality and admirable greenery. Classified in 05 categories</p>
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">with 120 hotel rooms and suites. Hotel Grand Cox's welcomes you in Cox's </p>
+        <p style="font-size: 20px; color: rgb(255, 255, 255);">Bazar to enjoy your holiday or vacation with comfort and luxury.</p>
+    </div>
+    <div style="width: 45%; line-height: 0.5; margin-left: 80px; margin-top: 20px; color: white;">
+        <p style="font-size: 30px; color: rgb(208, 167, 1);"><b>Contact</b></p>
+        <p style="font-size: 20px;"><b style="color: rgb(182, 221, 219);">Locatiion:</b> Hotel Grand Cox's Inani Beach, Cox's Bazar 4705, Bangladesh</p>
+        <p style="font-size: 20px;"><b style="color: rgb(182, 221, 219);">Phone:</b> 01714453223</p>
+        <p style="font-size: 20px;"><b style="color: rgb(182, 221, 219);">WhatsApp:</b> 01609391672</p>
+        <p style="font-size: 20px;"><b style="color: rgb(182, 221, 219);">Email:</b> bijoyahmed818@gmail.com</p>
+    </div>   
+</div>
+
+
+    <script>
+        document.getElementById("adminToggleBtn").addEventListener("click", function () {
+            const options = document.getElementById("adminOptions");
+            const isVisible = options.style.display === "flex";
+            options.style.display = isVisible ? "none" : "flex";
+        });
+    </script>
+</body>
+</html>
